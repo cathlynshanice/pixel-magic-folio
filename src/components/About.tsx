@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code2, Palette, Sparkles, Wand2, Zap, Star } from "lucide-react";
-import profileAvatar from "@/assets/profile-avatar.png";
+import profileAvatar from "@/assets/profile-avatar.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,7 +91,7 @@ export const About = () => {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="font-pixel text-4xl md:text-6xl text-primary pixel-text-shadow mb-4">
-            About the Artisan
+            About Me
           </h2>
           <div className="w-24 h-1 bg-magic-glow mx-auto magic-glow" />
         </div>
@@ -118,18 +118,12 @@ export const About = () => {
           <div ref={bioRef} className="space-y-6">
             <div className="pixel-border bg-card/80 backdrop-blur-sm p-8">
               <h3 className="font-pixel text-2xl md:text-3xl text-primary mb-4">
-                The Tale Begins...
+                Hey there, I’m Cathlyn Shanice
               </h3>
               <p className="font-pixel text-base md:text-lg text-foreground/90 leading-relaxed mb-4">
-                Deep within the enchanted forests of the digital realm, a
-                developer weaves spells of code and creativity. With every
-                keystroke, magic flows through the circuits, bringing pixels to
-                life.
-              </p>
-              <p className="font-pixel text-base md:text-lg text-foreground/90 leading-relaxed">
-                Specializing in front-end sorcery and user experience
-                enchantments, I craft immersive web experiences that transport
-                users to whimsical worlds.
+                I’m a developer who loves exploring different areas of technology — from AI engineering and UI/UX design to full-stack development. I enjoy learning how things work and finding creative ways to make them better.
+
+I’m currently studying Computer Science at BINUS University, where I’ve worked on projects involving AI, IoT, and web development. I’m passionate about building things that are useful, meaningful, and thoughtfully designed.
               </p>
             </div>
           </div>
@@ -138,7 +132,7 @@ export const About = () => {
         {/* Skills Section */}
         <div ref={skillsRef} className="mt-20">
           <h3 className="font-pixel text-3xl md:text-4xl text-center text-primary mb-12 pixel-text-shadow">
-            Magical Skills
+            Skills
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
             {skills.map((skill) => (

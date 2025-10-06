@@ -109,7 +109,7 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
 
       {/* Progress Text */}
       <p className="mt-4 text-magic-glow font-pixel text-lg magic-text-glow">
-        Conjuring Magic... {progress}%
+        Loading... {progress}%
       </p>
     </div>
   );

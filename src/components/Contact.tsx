@@ -151,7 +151,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="form-element w-full group relative px-8 py-4 bg-accent text-accent-foreground font-pixel text-xl hover:scale-105 transition-all duration-300 soft-glow"
+        
             >
               <Send className="inline-block w-5 h-5 mr-2" />
               Send Message
@@ -163,11 +163,11 @@ export const Contact = () => {
           {/* Social Links */}
           <div className="social-icons text-center">
             <p className="font-pixel text-lg text-muted-foreground mb-6">
-              Or find me on these mystical portals
+              You can also find me here
             </p>
             <div className="flex justify-center gap-6">
               <a
-                href="mailto:milad@example.com"
+                href="cathlynnshanicee@gmail.com"
                 className="social-icon group relative"
               >
                 <div className="w-16 h-16 flex items-center justify-center pixel-border bg-card hover:scale-110 transition-transform">

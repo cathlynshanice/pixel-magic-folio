@@ -2,11 +2,22 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ExternalLink, Code, Sparkles } from "lucide-react";
+import project1 from "@/assets/Agrimarket - 4.png";
+import project2 from "@/assets/Baik Bareng - 3 - new.png";
+import project3 from "@/assets/Roomagine 2.png";
+import project4 from "@/assets/Tanam Pintar - 5.png";
+import project5 from "@/assets/VOID.png";
+
+import { useNavigate } from "react-router-dom";
+
+import { Button } from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const Projects = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -28,46 +39,51 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Enchanted Portfolio",
+      image: project1,
+      title: "Agrimarket App",
+      role: "Front-end Developer",
       description:
-        "A magical pixel art portfolio showcasing the art of digital craftsmanship with GSAP animations",
-      tech: ["React", "GSAP", "Tailwind"],
+        "Agrimarket is a digital platform that connects farmers, distributors, and consumers directly to make the agricultural supply chain more efficient, transparent, and fair.",
+      tech: ["React", "Firebase", "TailwindCSS", "Figma"],
       gradient: "from-mushroom-red to-mushroom-cap",
+      github: "https://github.com/felissia/Agrimarket2.git",
     },
     {
-      title: "Mystic E-Commerce",
+      image: project2,
+      title: "Baik Bareng App",
       description:
-        "An immersive shopping experience with parallax scrolling and magical product reveals",
-      tech: ["Next.js", "Stripe", "Framer Motion"],
+        "BaikBareng was built to restore trust in public assistance by using AI to detect irregularities and blockchain to ensure transparency",
+      tech: ["N8N", "Typescript", "Supabase", "React", "Solidity", "Vite"],
       gradient: "from-cozy-purple to-cozy-lavender",
+      github: "https://github.com/BaikBareng-id/BaikBareng-App.git",
     },
     {
-      title: "Forest Dashboard",
+      image: project3,
+      title: "Roomagine",
       description:
-        "A nature-inspired admin panel with real-time data visualization and smooth transitions",
-      tech: ["Vue", "D3.js", "Node.js"],
+        "Our team developed Roomagine to make room design more intuitive by merging AI-powered furniture placement with real shopping options",
+      tech: ["Gemini", "React", "TailwindCSS", "N8N"],
       gradient: "from-forest-medium to-forest-deep",
+      github: "https://github.com/clarissa-ad/roomagine.git",
     },
     {
-      title: "Pixel Art Gallery",
+      image: project4,
+      title: "Tanam Pintar",
       description:
-        "An interactive gallery celebrating retro aesthetics with custom pixel art filters",
-      tech: ["React", "Canvas API", "WebGL"],
+        "Tanam Pintar is an IoT-powered smart farming system we built to make indoor agriculture more efficient and sustainable.",
+      tech: ["Roblox Studio", "Wokwi"],
       gradient: "from-magic-yellow to-magic-glow",
+      github: "https://github.com/JustKalvin/smart-plan-project-iot",
     },
     {
-      title: "Cozy Blog Platform",
+      image: project5,
+      title: "VOID",                                                   
       description:
-        "A warm and inviting blogging platform with markdown support and themed layouts",
-      tech: ["Gatsby", "MDX", "Sanity"],
+        "VOID started from my curiosity about how technology can truly support people in growing their careers.",
+      tech: ["Figma"],
       gradient: "from-cozy-pink to-secondary",
-    },
-    {
-      title: "Spell Tracker App",
-      description:
-        "A whimsical task management app with magical animations and gamification elements",
-      tech: ["React Native", "Firebase", "Redux"],
-      gradient: "from-forest-light to-cozy-lavender",
+      figma:
+        "https://drive.google.com/drive/u/2/folders/1P9TLb97qSbSfVYhB-aeXIiNRA0px-APA",
     },
   ];
 
@@ -104,10 +120,10 @@ export const Projects = () => {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="font-pixel text-4xl md:text-6xl text-primary pixel-text-shadow mb-4">
-            Magical Projects
+            My Projects
           </h2>
           <p className="font-pixel text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A collection of enchanted digital experiences crafted with care
+            A little collection of projects I’ve built along the way.
           </p>
           <div className="w-24 h-1 bg-magic-glow mx-auto mt-6 magic-glow" />
         </div>
@@ -115,28 +131,11 @@ export const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="project-card group cursor-pointer"
-            >
+            <div key={index} className="project-card group cursor-pointer">
               <div className="relative h-full pixel-border bg-card hover:scale-105 transition-all duration-300">
-                {/* Gradient Header */}
-                <div
-                  className={`h-40 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
-                >
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
-                    {[...Array(8)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="absolute w-2 h-2 bg-white rounded-full animate-sparkle"
-                        style={{
-                          left: `${Math.random() * 100}%`,
-                          top: `${Math.random() * 100}%`,
-                          animationDelay: `${Math.random() * 1.5}s`,
-                        }}
-                      />
-                    ))}
-                  </div>
+                <div>
+                  {/* Image */}
+                  <img src={project?.image} alt="" />
                 </div>
 
                 {/* Content */}
@@ -166,10 +165,14 @@ export const Projects = () => {
                       <ExternalLink className="w-4 h-4" />
                       Behold
                     </button>
-                    <button className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-primary text-primary font-pixel text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
+        
+                    <Button
+                      onClick={() => window.open(project.github?project.github:project.figma, "_blank")}
+            
+                    >
                       <Code className="w-4 h-4" />
                       Code
-                    </button>
+                    </Button>
                   </div>
                 </div>
 

@@ -61,19 +61,13 @@ export const Footer = () => {
             ))}
           </div>
 
-          {/* Copyright */}
-          <div className="flex items-center gap-2 font-pixel text-sm text-primary-foreground/80">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-mushroom-red animate-pulse-glow" />
-            <span>and</span>
-            <Sparkles className="w-4 h-4 text-magic-glow animate-shimmer" />
-          </div>
+          
         </div>
 
         {/* Bottom text */}
         <div className="text-center mt-8">
           <p className="font-pixel text-xs text-primary-foreground/60">
-            © 2025 Milad - Digital Artisan. All spells reserved.
+            © 2025 Cathlyn Shanice
           </p>
         </div>
       </div>

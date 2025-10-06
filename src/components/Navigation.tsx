@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X, Sparkles, Bird } from "lucide-react";
 import { gsap } from "gsap";
 
 export const Navigation = () => {
@@ -46,8 +46,8 @@ export const Navigation = () => {
             onClick={() => scrollToSection("hero")}
             className="flex items-center gap-2 font-pixel text-xl text-magic-glow hover:scale-110 transition-transform"
           >
-            <Sparkles className="w-6 h-6 animate-pulse-glow" />
-            <span className="magic-text-glow">Milad</span>
+            <Bird className="w-6 h-6 animate-pulse-glow" />
+            <span className="magic-text-glow">Cathlyn Shanice</span>
           </button>
 
           {/* Desktop Menu */}

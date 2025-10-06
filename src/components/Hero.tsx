@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Sparkles, Wand2 } from "lucide-react";
+import { Bird, Sparkles, Wand2 } from "lucide-react";
 import heroForest from "@/assets/hero-forest.png";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -113,7 +113,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Icon */}
           <div className="mb-6 flex justify-center">
-            <Wand2 className="w-16 h-16 text-magic-glow animate-pulse-glow" />
+            <Bird className="w-16 h-16 text-magic-glow animate-pulse-glow" />
           </div>
 
           {/* Headline */}
@@ -121,10 +121,10 @@ export const Hero = () => {
             ref={headlineRef}
             className="font-pixel text-5xl md:text-7xl lg:text-8xl mb-6 text-primary-foreground pixel-text-shadow"
           >
-            Hi, I'm <span className="text-magic-glow magic-text-glow">Milad</span>
+            Hi, I'm <span className="text-magic-glow magic-text-glow">Cathlyn Shanice</span>
             <br />
             <span className="text-3xl md:text-5xl lg:text-6xl">
-              Digital Artisan
+              AI Engineer
             </span>
           </h1>
 
