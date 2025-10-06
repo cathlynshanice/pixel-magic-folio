@@ -58,12 +58,12 @@ export const About = () => {
   }, []);
 
   const skills = [
-    { name: "HTML", icon: Code2, color: "text-mushroom-red" },
-    { name: "CSS", icon: Palette, color: "text-cozy-purple" },
-    { name: "JavaScript", icon: Sparkles, color: "text-magic-yellow" },
+    { name: "TailwindCSS", icon: Code2, color: "text-mushroom-red" },
+    { name: "Next.js", icon: Palette, color: "text-cozy-purple" },
+    { name: "Python", icon: Sparkles, color: "text-magic-yellow" },
     { name: "React", icon: Zap, color: "text-cozy-lavender" },
     { name: "TypeScript", icon: Star, color: "text-forest-light" },
-    { name: "Magic", icon: Wand2, color: "text-magic-glow" },
+    { name: "N8N", icon: Wand2, color: "text-magic-glow" },
   ];
 
   return (
