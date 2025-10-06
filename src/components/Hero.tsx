@@ -133,7 +133,7 @@ export const Hero = () => {
             ref={subtitleRef}
             className="font-pixel text-xl md:text-2xl mb-12 text-cozy-pink max-w-2xl mx-auto"
           >
-            Crafting enchanted web experiences with spells written in code
+            take a look around! 
           </p>
 
           {/* CTA Button */}
