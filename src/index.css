@@ -2,95 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Enchanted Pixel Art Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base Colors - Inspired by enchanted forest and magic shop */
+    --background: 210 20% 98%;
+    --foreground: 160 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Forest Palette */
+    --forest-deep: 150 35% 28%;
+    --forest-medium: 145 30% 45%;
+    --forest-light: 140 25% 65%;
+    
+    /* Mushroom & Magic Palette */
+    --mushroom-red: 0 65% 58%;
+    --mushroom-cap: 15 75% 48%;
+    --magic-glow: 48 85% 75%;
+    --warm-yellow: 45 80% 68%;
+    
+    /* Cozy Shop Palette */
+    --cozy-pink: 330 55% 78%;
+    --cozy-purple: 270 25% 60%;
+    --cozy-lavender: 265 30% 70%;
+    --wood-brown: 30 35% 45%;
+    --dark-wood: 25 40% 30%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* UI Colors using the palette */
+    --card: 48 60% 95%;
+    --card-foreground: 160 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 48 55% 96%;
+    --popover-foreground: 160 15% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: 150 35% 28%;
+    --primary-foreground: 48 85% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 330 55% 78%;
+    --secondary-foreground: 270 25% 20%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 140 20% 88%;
+    --muted-foreground: 160 10% 40%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 0 65% 58%;
+    --accent-foreground: 48 85% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 65% 58%;
+    --destructive-foreground: 48 85% 95%;
 
-    --radius: 0.5rem;
+    --border: 150 20% 75%;
+    --input: 150 20% 75%;
+    --ring: 48 85% 75%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.25rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Magical Effects */
+    --glow-magic: 48 100% 70%;
+    --glow-enchant: 280 60% 65%;
+    --particle-drift: 140 40% 75%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 160 25% 8%;
+    --foreground: 48 75% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 160 20% 12%;
+    --card-foreground: 48 75% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 160 22% 10%;
+    --popover-foreground: 48 75% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 140 40% 55%;
+    --primary-foreground: 160 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 330 45% 58%;
+    --secondary-foreground: 48 85% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 160 15% 18%;
+    --muted-foreground: 140 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 65% 58%;
+    --accent-foreground: 48 85% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 48%;
+    --destructive-foreground: 48 85% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 160 15% 22%;
+    --input: 160 15% 22%;
+    --ring: 48 75% 65%;
   }
 }
 
@@ -101,5 +100,125 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Pixelify Sans', cursive;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
   }
+
+  /* Pixel-perfect rendering */
+  img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+}
+
+@layer utilities {
+  /* Magical Glow Effects */
+  .magic-glow {
+    filter: drop-shadow(0 0 8px hsl(var(--glow-magic) / 0.6))
+            drop-shadow(0 0 16px hsl(var(--glow-magic) / 0.3));
+  }
+
+  .enchant-glow {
+    filter: drop-shadow(0 0 10px hsl(var(--glow-enchant) / 0.5))
+            drop-shadow(0 0 20px hsl(var(--glow-enchant) / 0.2));
+  }
+
+  .soft-glow {
+    box-shadow: 0 0 20px hsl(var(--glow-magic) / 0.3),
+                inset 0 0 10px hsl(var(--glow-magic) / 0.1);
+  }
+
+  /* Pixel Art Borders */
+  .pixel-border {
+    border: 4px solid hsl(var(--dark-wood));
+    box-shadow: 
+      0 0 0 2px hsl(var(--wood-brown)),
+      inset 0 0 0 2px hsl(var(--wood-brown) / 0.3);
+  }
+
+  .pixel-border-light {
+    border: 3px solid hsl(var(--forest-deep));
+    box-shadow: 
+      0 0 0 1px hsl(var(--forest-medium) / 0.5);
+  }
+
+  /* Text Shadows for Pixel Font */
+  .pixel-text-shadow {
+    text-shadow: 
+      2px 2px 0 hsl(var(--dark-wood) / 0.3),
+      3px 3px 0 hsl(var(--dark-wood) / 0.2);
+  }
+
+  .magic-text-glow {
+    text-shadow: 
+      0 0 10px hsl(var(--glow-magic) / 0.8),
+      0 0 20px hsl(var(--glow-magic) / 0.4),
+      0 0 30px hsl(var(--glow-magic) / 0.2);
+  }
+
+  /* Smooth Scrolling */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-5px) translateX(3px); }
+  75% { transform: translateY(-8px) translateX(-3px); }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    filter: drop-shadow(0 0 5px hsl(var(--glow-magic) / 0.4));
+  }
+  50% { 
+    filter: drop-shadow(0 0 15px hsl(var(--glow-magic) / 0.8))
+            drop-shadow(0 0 25px hsl(var(--glow-magic) / 0.4));
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { 
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
 }

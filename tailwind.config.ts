@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        pixel: ['"Pixelify Sans"', 'cursive'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,15 +50,27 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        forest: {
+          deep: "hsl(var(--forest-deep))",
+          medium: "hsl(var(--forest-medium))",
+          light: "hsl(var(--forest-light))",
+        },
+        mushroom: {
+          red: "hsl(var(--mushroom-red))",
+          cap: "hsl(var(--mushroom-cap))",
+        },
+        magic: {
+          glow: "hsl(var(--magic-glow))",
+          yellow: "hsl(var(--warm-yellow))",
+        },
+        cozy: {
+          pink: "hsl(var(--cozy-pink))",
+          purple: "hsl(var(--cozy-purple))",
+          lavender: "hsl(var(--cozy-lavender))",
+        },
+        wood: {
+          DEFAULT: "hsl(var(--wood-brown))",
+          dark: "hsl(var(--dark-wood))",
         },
       },
       borderRadius: {
