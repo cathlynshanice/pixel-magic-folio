@@ -3,6 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code2, Palette, Sparkles, Wand2, Zap, Star } from "lucide-react";
 import profileAvatar from "@/assets/profile-avatar.jpg";
+import tailwind_icon from "../assets/skills_icon/Tailwind CSS.png"
+import next_icon from "../assets/skills_icon/Nextjs.png"
+import python_icon from "../assets/skills_icon/Python.png"
+import react_icon from "../assets/skills_icon/React.png"
+import typescript_icon from "../assets/skills_icon/TypeScript.png"
+import n8n_icon from "../assets/skills_icon/N8N.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,12 +64,12 @@ export const About = () => {
   }, []);
 
   const skills = [
-    { name: "TailwindCSS", icon: Code2, color: "text-mushroom-red" },
-    { name: "Next.js", icon: Palette, color: "text-cozy-purple" },
-    { name: "Python", icon: Sparkles, color: "text-magic-yellow" },
-    { name: "React", icon: Zap, color: "text-cozy-lavender" },
-    { name: "TypeScript", icon: Star, color: "text-forest-light" },
-    { name: "N8N", icon: Wand2, color: "text-magic-glow" },
+    { name: "TailwindCSS", icon: tailwind_icon, color: "text-mushroom-red" },
+    { name: "Next.js", icon: next_icon, color: "text-cozy-purple" },
+    { name: "Python", icon: python_icon, color: "text-magic-yellow" },
+    { name: "React", icon: react_icon, color: "text-cozy-lavender" },
+    { name: "TypeScript", icon: typescript_icon, color: "text-forest-light" },
+    { name: "N8N", icon: n8n_icon, color: "text-magic-glow" },
   ];
 
   return (
@@ -141,8 +147,10 @@ I’m currently studying Computer Science at BINUS University, where I’ve work
                 className="skill-rune relative group cursor-pointer"
               >
                 <div className="pixel-border bg-card p-6 text-center hover:scale-110 transition-transform duration-300">
-                  <skill.icon
-                    className={`w-12 h-12 mx-auto mb-3 ${skill.color} group-hover:animate-pulse-glow`}
+                  <img 
+                    src={skill.icon} 
+                    alt={skill.name} 
+                    className="w-16 h-16 object-contain mx-auto mb-4" 
                   />
                   <p className="font-pixel text-sm text-foreground">
                     {skill.name}

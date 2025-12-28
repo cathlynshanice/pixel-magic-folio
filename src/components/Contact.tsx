@@ -167,7 +167,7 @@ export const Contact = () => {
             </p>
             <div className="flex justify-center gap-6">
               <a
-                href="cathlynnshanicee@gmail.com"
+                href="mailto:cathlynnshanicee@gmail.com"
                 className="social-icon group relative"
               >
                 <div className="w-16 h-16 flex items-center justify-center pixel-border bg-card hover:scale-110 transition-transform">
@@ -175,7 +175,7 @@ export const Contact = () => {
                 </div>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/cathlynshanice"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon group relative"
@@ -185,7 +185,7 @@ export const Contact = () => {
                 </div>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/cathlynshanice/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon group relative"

@@ -123,9 +123,6 @@ export const Hero = () => {
           >
             Hi, I'm <span className="text-magic-glow magic-text-glow">Cathlyn Shanice</span>
             <br />
-            <span className="text-3xl md:text-5xl lg:text-6xl">
-              AI Engineer
-            </span>
           </h1>
 
           {/* Subtitle */}
