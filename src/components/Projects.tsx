@@ -64,7 +64,7 @@ export const Projects = () => {
       tech: ["Python", "PyTorch", "BitsAndBytes", "Open-Source Transformer Models (BERT/RoBERTa)", "Kaggle Datasets", "Google Colab"],
       gradient: "from-mushroom-red to-mushroom-cap",
       documentation: "https://colab.research.google.com/drive/1E3t6dv82PBe1ijFX7rSzTltEHaAO3DX-?usp=sharing",
-      deploy : "https://docs.google.com/document/d/13xO0TKGM1W0dyjVdkgsHrQD6JURnYH3W/edit?usp=sharing&ouid=107307951303576389885&rtpof=true&sd=true"
+      deploy : "https://drive.google.com/file/d/1wm8VF4lcC0F0dfKjz4ZlgBz2-6Xbnida/view?usp=drivesdk"
     },
     {
       image: drowsiness,
