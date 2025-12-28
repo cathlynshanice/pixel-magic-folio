@@ -9,6 +9,8 @@ import python_icon from "../assets/skills_icon/Python.png"
 import react_icon from "../assets/skills_icon/React.png"
 import typescript_icon from "../assets/skills_icon/TypeScript.png"
 import n8n_icon from "../assets/skills_icon/N8N.png"
+import figma_icon from "../assets/skills_icon/FIGMA.png"
+import numpy_icon from "../assets/skills_icon/Numpy.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,9 +66,11 @@ export const About = () => {
   }, []);
 
   const skills = [
-    { name: "TailwindCSS", icon: tailwind_icon, color: "text-mushroom-red" },
+    { name: "Figma", icon: figma_icon, color: "text-mushroom-red" },
+    { name: "Tailwind", icon: tailwind_icon, color: "text-mushroom-red" },
     { name: "Next.js", icon: next_icon, color: "text-cozy-purple" },
     { name: "Python", icon: python_icon, color: "text-magic-yellow" },
+    { name: "Numpy", icon: numpy_icon, color: "text-mushroom-red" },
     { name: "React", icon: react_icon, color: "text-cozy-lavender" },
     { name: "TypeScript", icon: typescript_icon, color: "text-forest-light" },
     { name: "N8N", icon: n8n_icon, color: "text-magic-glow" },
